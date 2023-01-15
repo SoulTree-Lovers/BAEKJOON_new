@@ -1,28 +1,24 @@
-# 단어 공부
+# 단어 공부 
+import operator
 
 word = input().upper()
 
-max_count = 0
-max_word = None
-count_list = []
+word_dic = {}
 
-for i in range(len(word)):
-    word_count = word.count(word[i])
+for w in word:
+    if w not in word_dic:
+        word_dic[w] = 1
+    else:
+        word_dic[w] += 1
 
-    if max_count < word_count:
-        max_count = word_count
-        max_word = word[i]
-    
-    count_list.append(word_count)
 
-count_list.sort()
+count_list = sorted(word_dic.values())
 
-if count_list[-1] == count_list[-2]:
+# print(count_list)
+if len(count_list) > 1 and count_list[-1] == count_list[-2]:
     print("?")
 
 else:
-    print(max_word)
-    
+    print(max(word_dic.items(), key=operator.itemgetter(1))[0])
 
 
-        
