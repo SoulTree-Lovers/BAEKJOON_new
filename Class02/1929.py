@@ -16,5 +16,5 @@ for i in range(2, int(math.sqrt(b)) + 1): # 2부터 b의 제곱근까지의 모�
 
 # 모든 소수 출력
 for i in range(a, b+1):
-    if array[i]:
+    if array[i] and i != 1:
         print(i)
