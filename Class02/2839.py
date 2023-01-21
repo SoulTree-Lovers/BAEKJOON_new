@@ -7,8 +7,6 @@ three_sugar = 0
 
 total = n
 
-
-
 while 1:
     total = n
     total -= five_sugar * 5 + three_sugar * 3
