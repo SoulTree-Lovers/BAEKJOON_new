@@ -1,4 +1,4 @@
-# Who is in the middle?
+# Who is in the middle? [다국어]
 
 bowl = []
 
