@@ -19,10 +19,4 @@ while k > 0:
     count += temp
     index -= 1
 
-    # if coin_list[index] <= k:
-    #     k -= k // coin_list[index] 
-    #     count += 1
-    # else:
-    #     index -= 1
-
 print(count)
